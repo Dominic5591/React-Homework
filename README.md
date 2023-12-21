@@ -9,9 +9,18 @@ Currently, two official plugins are available:
 This command will create a clone of the repo' main branch under the name in the directory where it is run.
 - npx tiged Dominic5591/my-react-vite-template#main
 
-## Commands to Install
+## Commands to Install & Run lint
+
+
+
+these commands install npm and run dev
+make sure to run these in the root project folder
 - npm install
 - npm run dev
+to open in browser:
+- 0
+- npm run lint to check for errors
+- npm install -D vite-plugin-eslint
 
 
 ## Plugins
