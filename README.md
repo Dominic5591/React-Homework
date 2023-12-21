@@ -17,8 +17,8 @@ these commands install npm and run dev
 make sure to run these in the root project folder
 - npm install
 - npm run dev
-to open in browser:
-- 0
+- to open in browser:
+- o
 - npm run lint to check for errors
 - npm install -D vite-plugin-eslint
 
