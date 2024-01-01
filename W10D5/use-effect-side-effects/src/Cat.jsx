@@ -20,8 +20,8 @@ const Cat = () => {
     const colorInterval = setInterval(() => {
       setColorIdx((prevIdx) => {
         const newIdx = ++prevIdx % COLORS.length;
-        return newIdx
-      })
+        return newIdx;
+      });
     }, delayChange);
 
     return () => {
@@ -31,7 +31,7 @@ const Cat = () => {
 
 
   useEffect(() => {
-    localStorage.setItem(KEY, statusChange)
+    localStorage.setItem(KEY, statusChange);
   }, [statusChange]);
 
   useEffect(() => {
@@ -99,7 +99,7 @@ const Cat = () => {
             type="number"
             id="dStatus"
             onChange={(e) => {
-              setDelay(e.target.value)
+              setDelay(e.target.value);
             }}
             placeholder="delay in seconds"
             value={delay}
