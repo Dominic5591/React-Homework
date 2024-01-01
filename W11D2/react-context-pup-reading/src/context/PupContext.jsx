@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useContext } from "react";
 // import sleepy from '../pups/sleepy-pup.jpg';
 import banana from '../pups/banana-pup.jpg';
 const PupProvider = (props) => {
@@ -13,3 +13,7 @@ const PupProvider = (props) => {
 
 export const PupContext = createContext();
 export default PupProvider;
+
+export function usePuppyType() {
+  return useContext(PupContext);
+}
