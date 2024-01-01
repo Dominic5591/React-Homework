@@ -22,7 +22,7 @@ const UseEffectTest = () => {
     }, 1000);
 
     return () => {
-      console.log(`UseEffect3 cleanup ran.\nsetInterval number ${count} is being cleared out`)
+      console.log(`UseEffect3 cleanup ran.\nsetInterval number ${count} is being cleared out`);
       clearInterval(myInterval);
     };
 
