@@ -11,7 +11,7 @@ function ArticleLayout() {
       <Outlet />
       <ArticleInput />
     </>
-  )
+  );
 }
 
 const router = createBrowserRouter([
@@ -21,18 +21,18 @@ const router = createBrowserRouter([
     children: [
       {
         path: ':id',
-        element: <SingleArticle />
-      }
-    ]
+        element: <SingleArticle />,
+      },
+    ],
   },
   {
     path: '*',
-    element: <Navigate to='/articles' replace={true} />
-  }
+    element: <Navigate to='/articles' replace={true} />,
+  },
 ]);
 
 function App() {
-  return <RouterProvider router={router} />
+  return <RouterProvider router={router} />;
 }
 
 export default App;
